@@ -1,0 +1,72 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Roboto:wght@500&display=swap');
+
+/* html and body */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #2e2f44;
+}
+
+/* default setting */
+* {
+    box-sizing: border-box;
+}
+
+/* clock section */
+#clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 800px;
+    background-color: #2d2e40;
+    margin: 30vh auto;
+    font-size: 100px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px 2px black;
+    position: relative;
+}
+
+
+.bx {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    font-size: 35px;
+    color: #d5d5d5;
+    text-shadow: 5px 5px 10px black;
+}
+
+.bx:hover {
+    color: #adabab;
+}
+
+/* clock direct child time section */
+.time-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #d5d5d5;
+    text-shadow: 5px 5px 10px black;
+}
+
+.small {
+    font-size: 40px;
+    color: #adabab;
+}
+
+/* clock direct child date section */
+.date-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 20px;
+    color: #a5a5a5;
+    text-shadow: 3px 3px 5px black;
+}

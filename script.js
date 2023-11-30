@@ -11,7 +11,7 @@ let dropDown = document.querySelector('.dropdown ul');
 
 
 // day and month names
-let dayName = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+let dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 
@@ -34,7 +34,7 @@ let clockFunction = () => {
     let minute = date.getMinutes();
     let second = date.getSeconds();
     let month = monthName[date.getMonth()];
-    let day = dayName[date.getDay() - 1];
+    let day = dayName[date.getDay()];
     let dat = date.getDate();
 
     // date and time innerHTML
